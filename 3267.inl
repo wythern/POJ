@@ -62,34 +62,47 @@ char word[32];
 int dp[320][320];
 int dpDict[320][320];
 
-int removeToFitDict(int s, int e){
+int removeToFitDictEx(int s, int e, Trie* pNode, int len){
 	if (s == e)
-		return 0;
+	{
+		if (pNode->m_bEnd)
+			return 0;
+		else
+			return len;
+	}
+
+	int minRemove = e - s;
+	Trie* pNext = pNode->subNodes[message[s] - 'a'];
+	if (pNext == NULL)
+		minRemove = removeToFitDictEx(s + 1, e, pNode, len) + 1;
+	else{
+		int a = removeToFitDictEx(s + 1, e, pNext, len + 1);
+		int b = removeToFitDictEx(s + 1, e, pNode, len) + 1;
+		minRemove = std::min(a, b);
+	}
+
+	return minRemove;
+}
+
+int removeToFitDict(int s, int e, Trie* pNode, int len){
+	if (s == e)
+	{
+		if (pNode->m_bEnd)
+			return 0;
+		else
+			return len;
+	}
 
 	if (dpDict[s][e] != -1)
 		return dpDict[s][e];
 
 	int minRemove = e - s;
-	for (int idx = s; idx < e; ++idx){
-		Trie* pCurr = &dict;
-
-		int remove = 0;
-		int pos = idx;
-		while (pos < e)
-		{
-			Trie* pNext = pCurr->subNodes[message[pos] - 'a'];
-			if (pNext == NULL){
-				++remove;
-				++pos;
-				continue;
-			}
-
-			++pos;
-			pCurr = pNext;
-		}
-
-		if (pCurr->m_bEnd && minRemove > remove + idx - s)
-			minRemove = remove + idx - s;
+	Trie* pNext = pNode ->subNodes[message[s] - 'a'];
+	if (pNext == NULL)
+		minRemove = removeToFitDict(s + 1, e, &dict, 0) + 1;
+	else{
+		int a = removeToFitDictEx(s + 1, e, pNext, 1);
+		minRemove = std::min(minRemove, a);
 	}
 
 	dpDict[s][e] = minRemove;
@@ -103,10 +116,11 @@ int calcLeastRemove(int s, int e){
 	if (dp[s][e] != -1)
 		return dp[s][e];
 
-	int remove = e - s;
-	for (int i = s + 1; i <= e; i++)
+	//int remove = e - s;
+	int remove = removeToFitDict(s, e, &dict, 0);
+	for (int i = s + 1; i < e; i++)
 	{
-		remove = std::min(remove, removeToFitDict(s, i) + calcLeastRemove(i, e));
+		remove = std::min(remove, calcLeastRemove(s, i) + calcLeastRemove(i, e));
 	}
 	dp[s][e] = remove;
 	return remove;
