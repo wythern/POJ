@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\inls">
+      <UniqueIdentifier>{37861d44-54a6-461d-8f19-aee0ea3652a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\DP">
+      <UniqueIdentifier>{312ba97c-3e3a-44a8-ae5e-ce7541cbeff7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="POJ.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sample.inl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="3020.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="reference.inl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="1035.inl">
+      <Filter>Source Files\inls</Filter>
+    </None>
+    <None Include="1062.inl">
+      <Filter>Source Files\inls</Filter>
+    </None>
+    <None Include="1068.inl">
+      <Filter>Source Files\inls</Filter>
+    </None>
+    <None Include="1083.inl">
+      <Filter>Source Files\inls</Filter>
+    </None>
+    <None Include="1094.inl">
+      <Filter>Source Files\inls</Filter>
+    </None>
+    <None Include="1125.inl">
+      <Filter>Source Files\inls</Filter>
+    </None>
+    <None Include="1129.inl">
+      <Filter>Source Files\inls</Filter>
+    </None>
+    <None Include="1321.inl">
+      <Filter>Source Files\inls</Filter>
+    </None>
+    <None Include="1328.inl">
+      <Filter>Source Files\inls</Filter>
+    </None>
+    <None Include="1416.inl">
+      <Filter>Source Files\inls</Filter>
+    </None>
+    <None Include="1753.inl">
+      <Filter>Source Files\inls</Filter>
+    </None>
+    <None Include="1789.inl">
+      <Filter>Source Files\inls</Filter>
+    </None>
+    <None Include="1797.inl">
+      <Filter>Source Files\inls</Filter>
+    </None>
+    <None Include="1837.inl">
+      <Filter>Source Files\inls</Filter>
+    </None>
+    <None Include="1840.inl">
+      <Filter>Source Files\inls</Filter>
+    </None>
+    <None Include="1860.inl">
+      <Filter>Source Files\inls</Filter>
+    </None>
+    <None Include="1936.inl">
+      <Filter>Source Files\inls</Filter>
+    </None>
+    <None Include="2002.inl">
+      <Filter>Source Files\inls</Filter>
+    </None>
+    <None Include="2109.inl">
+      <Filter>Source Files\inls</Filter>
+    </None>
+    <None Include="2159.inl">
+      <Filter>Source Files\inls</Filter>
+    </None>
+    <None Include="2251.inl">
+      <Filter>Source Files\inls</Filter>
+    </None>
+    <None Include="2253.inl">
+      <Filter>Source Files\inls</Filter>
+    </None>
+    <None Include="2262.inl">
+      <Filter>Source Files\inls</Filter>
+    </None>
+    <None Include="2299.inl">
+      <Filter>Source Files\inls</Filter>
+    </None>
+    <None Include="2485.inl">
+      <Filter>Source Files\inls</Filter>
+    </None>
+    <None Include="2488.inl">
+      <Filter>Source Files\inls</Filter>
+    </None>
+    <None Include="2503.inl">
+      <Filter>Source Files\inls</Filter>
+    </None>
+    <None Include="2513.inl">
+      <Filter>Source Files\inls</Filter>
+    </None>
+    <None Include="2531.inl">
+      <Filter>Source Files\inls</Filter>
+    </None>
+    <None Include="2739.inl">
+      <Filter>Source Files\inls</Filter>
+    </None>
+    <None Include="2965.inl">
+      <Filter>Source Files\inls</Filter>
+    </None>
+    <None Include="3009.inl">
+      <Filter>Source Files\inls</Filter>
+    </None>
+    <None Include="3041.inl">
+      <Filter>Source Files\inls</Filter>
+    </None>
+    <None Include="3080.inl">
+      <Filter>Source Files\inls</Filter>
+    </None>
+    <None Include="3083.inl">
+      <Filter>Source Files\inls</Filter>
+    </None>
+    <None Include="3253.inl">
+      <Filter>Source Files\inls</Filter>
+    </None>
+    <None Include="3259.inl">
+      <Filter>Source Files\inls</Filter>
+    </None>
+    <None Include="3274.inl">
+      <Filter>Source Files\inls</Filter>
+    </None>
+    <None Include="3278.inl">
+      <Filter>Source Files\inls</Filter>
+    </None>
+    <None Include="3295.inl">
+      <Filter>Source Files\inls</Filter>
+    </None>
+    <None Include="3349.inl">
+      <Filter>Source Files\inls</Filter>
+    </None>
+    <None Include="1276.inl">
+      <Filter>Source Files\inls</Filter>
+    </None>
+    <None Include="3267.inl">
+      <Filter>Source Files\DP</Filter>
+    </None>
+  </ItemGroup>
+</Project>
